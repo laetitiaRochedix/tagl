@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>fr.imag</groupId>
-  <artifactId>fr.imag</artifactId>
+  <artifactId>cron4j</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>fr.imag</name>
+  <name>fr.imag.cron4j</name>
   <url>http://maven.apache.org</url>
 
   <properties>
