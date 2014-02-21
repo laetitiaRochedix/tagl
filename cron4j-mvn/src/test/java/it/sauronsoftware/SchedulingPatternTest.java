@@ -25,6 +25,16 @@ public class SchedulingPatternTest {
   public void testExceptionIsThrown() {
     SchedulingPattern sp = new SchedulingPattern("0 5 * *");
   }
+  
+  @Test(expected = InvalidPatternException.class)
+  public void testExceptionIsThrown1() {
+    SchedulingPattern sp = new SchedulingPattern("0 5 * ");
+  }
+  
+  @Test(expected = InvalidPatternException.class)
+  public void testExceptionIsThrown2() {
+    SchedulingPattern sp = new SchedulingPattern("0 5 * a");
+  }
 
   @Test
   public void testPattern() {
